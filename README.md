@@ -2,14 +2,6 @@
 
 Sistema web para gerenciamento de condomínios desenvolvido em PHP procedural, HTML, CSS e JavaScript.
 
-## 👥 Equipe
-
-- **Líder**: Carlos Eduardo Teixeira - Responsável por backend, banco de dados e configurações
-- **Desenvolvedor 2**: [Carlos Eduardo] - Páginas X, Y, Z
-- **Desenvolvedor 3**: [Jhonatan] - Páginas A, B, C
-- **Desenvolvedor 4**: [Denilson] - Páginas D, E, F
-- **Desenvolvedor 5**: [Daniel] - Páginas G, H, I
-
 ## 📋 Divisão de Trabalho
 
 ### ✅ Já Implementado (NÃO MEXER)
@@ -19,24 +11,6 @@ Sistema web para gerenciamento de condomínios desenvolvido em PHP procedural, H
 - ✅ Backend PHP de todas as páginas
 - ✅ Estrutura base CSS (`css/style.css`)
 
-### 🎨 Para Implementar (HTML/CSS)
-
-#### Desenvolvedor 2
-- [ ] `pages/dashboard-admin.php` - Cards de estatísticas e botões de ação
-- [ ] `pages/moradores.php` - Formulário e tabela de moradores
-
-#### Desenvolvedor 3
-- [ ] `pages/vagas.php` - Formulário e tabela de vagas
-- [ ] `pages/veiculos.php` - Formulário e tabela de veículos
-
-#### Desenvolvedor 4
-- [ ] `pages/visitantes.php` - Formulário de registro e listagem
-- [ ] `pages/comunicados.php` - Formulário (admin) e listagem de comunicados
-
-#### Desenvolvedor 5
-- [ ] `pages/dashboard-morador.php` - Dashboard do morador
-- [ ] `pages/perfil.php` - Formulário de edição de perfil
-- [ ] `includes/header.php` - Header com navegação estilizada
 
 ## 🚀 Como Começar
 
@@ -62,7 +36,7 @@ cd sis-condominio
 http://localhost/sis-condominio
 ```
 
-**Login Admin:**
+**Login Admin  exemplo:**
 - CPF: `00000000000`
 - Senha: `admin123`
 
@@ -217,12 +191,3 @@ git commit -m "resolve: conflitos com main"
 git push origin sua-branch
 ```
 
-## 📚 Recursos Úteis
-
-- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-- [PHP Manual](https://www.php.net/manual/pt_BR/)
-- [MDN Web Docs](https://developer.mozilla.org/)
-
----
-
-💡 **Dica:** Sempre teste suas alterações localmente antes de fazer commit!
