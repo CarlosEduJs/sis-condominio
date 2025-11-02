@@ -1,0 +1,30 @@
+# Configurações locais
+config/db.php
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+GIT-GUIDE.md
+TEAM-GUIDE.md
+TASKS.md
+EXAMPLES.md
+PULL_REQUEST_TEMPLATE.md
+FRONTEND-GUIDE.md
+GIT-PARA-INICIANTES.md
+
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporários
+*.tmp
+*.temp
+*~
