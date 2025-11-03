@@ -18,7 +18,7 @@ function validateLoginForm(form) {
   const senha = form.querySelector('[name="senha"]');
   let ok = true;
 
-  if (!validarCPF(cpf.value.trim())) {
+  if (!validarCPF(cpf.value.trim()) || cpf.value.length > 11) {
     showError(cpf, "CPF inválido");
     ok = false;
   }
