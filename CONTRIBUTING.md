@@ -62,6 +62,7 @@ git commit -m "feat: implementa HTML do dashboard admin com cards de estatístic
 - `style: ` - Mudanças de estilo/formatação
 - `refactor: ` - Refatoração de código
 - `docs: ` - Mudanças na documentação
+- `valid` - Mudanças na validação
 
 ### 5️⃣ Push
 
