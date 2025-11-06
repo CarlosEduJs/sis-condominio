@@ -1,193 +1,125 @@
-# 🏢 Sistema de Gestão Condominial
+# Sistema de Gestão Condominial
 
-Sistema web para gerenciamento de condomínios desenvolvido em PHP procedural, HTML, CSS e JavaScript.
+Sistema web completo para gerenciamento de condomínios, desenvolvido em PHP puro com MySQL.
 
-## 📋 Divisão de Trabalho
+## 📋 Funcionalidades
 
-### ✅ Já Implementado (NÃO MEXER)
-- ✅ Estrutura do banco de dados (`database.sql`)
-- ✅ Configurações (`config/db.php`)
-- ✅ Autenticação (`includes/auth.php`)
-- ✅ Backend PHP de todas as páginas
-- ✅ Estrutura base CSS (`css/style.css`)
+### Para Administradores
+- **Dashboard Administrativo** - Visão geral com estatísticas do condomínio
+- **Gerenciamento de Moradores** - Cadastro completo de moradores (nome, CPF, apartamento, bloco)
+- **Controle de Vagas** - Gerenciamento de vagas cobertas e descobertas
+- **Cadastro de Veículos** - Registro de veículos vinculados aos moradores
+- **Registro de Visitantes** - Controle de entrada e saída de visitantes
+- **Comunicados** - Publicação de avisos e comunicados aos moradores
 
+### Para Moradores
+- **Dashboard do Morador** - Acesso às informações pessoais
+- **Visualização de Comunicados** - Consulta aos avisos do condomínio
+- **Consulta de Perfil** - Visualização dos dados cadastrais
 
-## 🚀 Como Começar
+## 🗄️ Estrutura do Banco de Dados
 
-### 1. Clone o Repositório
+O sistema utiliza 5 tabelas principais:
+
+- **usuarios** - Armazena moradores e administradores
+- **vagas** - Controle de vagas de estacionamento
+- **veiculos** - Registro de veículos dos moradores
+- **visitantes** - Log de entrada/saída de visitantes
+- **comunicados** - Avisos e comunicados publicados
+
+## 🚀 Instalação
+
+### Pré-requisitos
+- PHP 7.4 ou superior
+- MySQL 5.7 ou superior
+- Apache (XAMPP, WAMP, ou similar)
+
+### Passos de Instalação
+
+1. Clone ou baixe o projeto para a pasta do servidor web:
 ```bash
-git clone [URL_DO_REPOSITORIO]
-cd sis-condominio
+# Para XAMPP
+c:\xampp\htdocs\sis-condominio
 ```
 
-### 2. Configure o Ambiente Local
-- Instale o XAMPP (Apache + MySQL/MariaDB)
-- Coloque o projeto em `C:\xampp\htdocs\sis-condominio`
-- Inicie Apache e MySQL no XAMPP Control Panel
+2. Importe o banco de dados:
+   - Abra o phpMyAdmin (http://localhost/phpmyadmin)
+   - Crie um novo banco de dados chamado `condominio`
+   - Importe o arquivo `database.sql`
 
-### 3. Configure o Banco de Dados
-```bash
-# Acesse phpMyAdmin: http://localhost/phpmyadmin
-# Execute o arquivo database.sql
-```
+3. Configure a conexão com o banco (se necessário):
+   - Edite o arquivo `config/db.php`
+   - Ajuste as credenciais de acesso ao MySQL
 
-### 4. Acesse o Sistema
+4. Acesse o sistema:
 ```
 http://localhost/sis-condominio
 ```
 
-**Login Admin  exemplo:**
-- CPF: `00000000000`
-- Senha: `admin123`
+## 🔐 Acesso ao Sistema
 
-**Login Morador:**
-- CPF: `11111111111`
-- Senha: `morador123`
+### Usuário Administrador
+- **CPF:** 00000000000
+- **Senha:** admin123
 
-## 📝 Fluxo de Trabalho Git
+### Usuário Morador (exemplo)
+- **CPF:** 11111111111
+- **Senha:** morador123
 
-### Para Cada Desenvolvedor
+## 🛠️ Tecnologias Utilizadas
 
-#### 1. Crie sua branch
-```bash
-git checkout -b feature/seu-nome-paginas
-# Exemplo: git checkout -b feature/joao-dashboard-admin
-```
+- **Backend:** PHP (PDO para banco de dados)
+- **Banco de Dados:** MySQL
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Segurança:** 
+  - Senhas com hash bcrypt
+  - Validação de sessões
+  - Controle de acesso por perfil (admin/morador)
+  - Proteção contra SQL Injection (prepared statements)
 
-#### 2. Trabalhe nas suas páginas
-- Edite APENAS os arquivos HTML das páginas atribuídas a você
-- NÃO modifique arquivos de backend PHP (lógica no topo dos arquivos)
-- Pode adicionar CSS em `css/` se necessário
-
-#### 3. Commit frequente
-```bash
-git add .
-git commit -m "feat: implementa HTML do dashboard admin"
-```
-
-#### 4. Envie para o GitHub
-```bash
-git push origin feature/seu-nome-paginas
-```
-
-#### 5. Abra um Pull Request
-- Vá no GitHub
-- Clique em "Compare & Pull Request"
-- Descreva o que foi implementado
-- Aguarde revisão do líder
-
-### ⚠️ Regras Importantes
-
-1. **NUNCA commite direto na branch `main`**
-2. **SEMPRE trabalhe na sua própria branch**
-3. **NUNCA modifique arquivos que não são seus**
-4. **Antes de começar, sempre puxe as atualizações:**
-   ```bash
-   git checkout main
-   git pull origin main
-   git checkout -b sua-nova-branch
-   ```
-
-## 🎨 Estrutura de Arquivos
+## 📁 Estrutura de Arquivos
 
 ```
 sis-condominio/
 ├── config/
-│   └── db.php              ❌ NÃO MEXER
-├── css/
-│   ├── style.css           ✅ Pode adicionar estilos
-│   ├── dashboard.css       ✅ Pode adicionar estilos
-│   └── forms.css           ✅ Pode adicionar estilos
+│   └── db.php              # Configuração do banco de dados
+├── css/                    # Arquivos de estilo
 ├── includes/
-│   ├── auth.php            ❌ NÃO MEXER
-│   ├── header.php          ✅ HTML/CSS apenas
-│   └── footer.php          ✅ HTML/CSS apenas
-├── js/
-│   └── *.js                ✅ Pode adicionar JS
+│   ├── auth.php           # Sistema de autenticação
+│   ├── header.php         # Cabeçalho padrão
+│   └── footer.php         # Rodapé padrão
+├── js/                     # Scripts JavaScript
 ├── pages/
-│   ├── *.php               ✅ HTML apenas (não mexer no PHP do topo)
-└── database.sql            ❌ NÃO MEXER
+│   ├── login.php          # Página de login
+│   ├── dashboard-admin.php    # Dashboard administrativo
+│   ├── dashboard-morador.php  # Dashboard do morador
+│   ├── moradores.php      # Gestão de moradores
+│   ├── vagas.php          # Gestão de vagas
+│   ├── veiculos.php       # Gestão de veículos
+│   ├── visitantes.php     # Registro de visitantes
+│   ├── comunicados.php    # Sistema de comunicados
+│   └── perfil.php         # Perfil do usuário
+├── database.sql           # Script de criação do banco
+└── index.php             # Página inicial (redirecionamento)
 ```
 
-## 🔧 Variáveis PHP Disponíveis
+## 🔒 Segurança
 
-### Em todas as páginas (já no backend):
-- `$_SESSION['user_id']` - ID do usuário logado
-- `$_SESSION['role']` - 'admin' ou 'morador'
-- `$_SESSION['nome']` - Nome do usuário
-- `$error` - Mensagem de erro (se houver)
-- `$success` - Mensagem de sucesso (se houver)
+- Sistema de autenticação baseado em sessões PHP
+- Controle de acesso por perfil (RBAC)
+- Senhas armazenadas com hash bcrypt (password_hash)
+- Prepared statements para prevenir SQL Injection
+- Validação de dados no servidor
+- Sanitização de CPF e outros campos
 
-### Exemplos de uso no HTML:
+## 📝 Observações
 
-```php
-<!-- Exibir nome do usuário -->
-<p>Bem-vindo, <?php echo htmlspecialchars($_SESSION['nome']); ?>!</p>
+- O sistema foi desenvolvido em PHP puro, sem frameworks
+- Utiliza PDO para comunicação segura com o banco de dados
+- Interface responsiva e moderna
+- Código limpo e bem estruturado
+- Fácil manutenção e extensão
 
-<!-- Mostrar mensagem de erro -->
-<?php if ($error): ?>
-    <div class="message-area error">
-        <?php echo htmlspecialchars($error); ?>
-    </div>
-<?php endif; ?>
+## 📄 Licença
 
-<!-- Loop em dados (exemplo: moradores) -->
-<?php foreach ($moradores as $morador): ?>
-    <tr>
-        <td><?php echo htmlspecialchars($morador['nome']); ?></td>
-        <td><?php echo htmlspecialchars($morador['cpf']); ?></td>
-    </tr>
-<?php endforeach; ?>
-```
-
-## 🎨 Classes CSS Disponíveis
-
-```css
-/* Botões */
-.btn                 /* Botão base */
-.btn-primary         /* Botão primário azul */
-.btn-logout          /* Botão de logout */
-
-/* Mensagens */
-.message-area        /* Container de mensagem */
-.message-area.error  /* Mensagem de erro */
-.message-area.success /* Mensagem de sucesso */
-
-/* Layout */
-.container           /* Container centralizado */
-.main-content        /* Conteúdo principal */
-.main-header         /* Header */
-.main-footer         /* Footer */
-.main-nav            /* Navegação */
-
-/* Forms */
-.form-group          /* Grupo de input */
-```
-
-## ✅ Checklist Antes de Fazer PR
-
-- [ ] Código está funcionando localmente
-- [ ] Não quebrou nenhuma funcionalidade existente
-- [ ] HTML está bem indentado e limpo
-- [ ] CSS está em arquivos separados (não inline)
-- [ ] Variáveis PHP usam `htmlspecialchars()` para segurança
-- [ ] Commit messages são descritivas
-
-## 🐛 Resolução de Conflitos
-
-Se aparecer conflito ao fazer merge:
-
-```bash
-# 1. Atualize sua branch com a main
-git checkout main
-git pull origin main
-git checkout sua-branch
-git merge main
-
-# 2. Resolva os conflitos manualmente nos arquivos
-# 3. Adicione os arquivos resolvidos
-git add .
-git commit -m "resolve: conflitos com main"
-git push origin sua-branch
-```
-
+Este projeto é de código aberto e está disponível para uso educacional e comercial.
