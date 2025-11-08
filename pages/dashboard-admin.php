@@ -95,8 +95,10 @@ try {
                 </div>  
             </header>
             <div class="group-value">
-                <p class="value"><?php echo $total_vagas; ?></p>
-                <p class="muted">vaga(s) ocupada(s)</p>
+                <p class="value"><?php echo $vagas_ocupadas; ?></p>
+                <p class="muted">vaga(s) ocupada(s) e </p>
+                <p class="value"><?php echo $total_vagas - $vagas_ocupadas; ?></p>
+                <p class="muted">vaga(s) disponível(eis)</p>
             </div>
         </div>
         <div class="dashboard-card">

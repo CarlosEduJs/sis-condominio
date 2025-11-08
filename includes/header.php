@@ -48,7 +48,7 @@ requireAdmin();
                         <a class="link" href="visitantes.php"><span class="material-symbols-outlined">person_add</span> Visitantes</a>
                     <?php endif; ?>
                     <a class="link" href="perfil.php"><span class="material-symbols-outlined">person</span> Perfil</a>
-                    <a href="logout.php" class="btn btn-logout">Sair da conta <span class="material-symbols-outlined">logout</span></a>
+                    <a href="logout.php" class="btn btn-logout btn-sm">Sair da conta</a>
                 </nav>
                 <div class="menu">
                     <span class="material-symbols-outlined menu-icon" onclick="toggleMenu()">
