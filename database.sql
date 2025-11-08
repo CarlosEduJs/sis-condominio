@@ -78,7 +78,7 @@ INSERT INTO vagas (numero, tipo, status) VALUES
 ('002', 'coberta', 'disponivel'),
 ('003', 'descoberta', 'disponivel'),
 ('004', 'descoberta', 'disponivel'),
-('005', 'coberta', 'disponivel');
+('005', 'coberta', 'disponivel');   
 
 -- Inserir um comunicado de exemplo
 INSERT INTO comunicados (titulo, mensagem, autor_id, data_publicacao)

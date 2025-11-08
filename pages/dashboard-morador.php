@@ -1,6 +1,6 @@
 <?php
-include '../includes/auth.php';
-include '../config/db.php';
+include_once '../includes/auth.php';
+include_once '../config/db.php';
 requireMorador();
 
 // Busca dados do morador

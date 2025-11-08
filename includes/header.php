@@ -1,7 +1,6 @@
 <?php
 include_once '../includes/auth.php';
 include_once '../config/db.php';
-requireAdmin();
 
     try {
         // obter o nome do usuario logado

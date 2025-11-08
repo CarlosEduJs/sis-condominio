@@ -216,13 +216,6 @@ try {
         </section>
 
     </div>
-
-    <!-- Área de Ações Rápidas -->
-        <!-- Inserir botões de acesso rápido para: moradores, vagas, veículos, visitantes, comunicados -->
-        
-        <!-- Área de Comunicados Recentes -->
-        <!-- Listar últimos 5 comunicados publicados -->
-        
 </main>
 
 <?php include '../includes/footer.php'; ?>
