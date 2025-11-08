@@ -61,16 +61,13 @@ try {
 <?php include '../includes/header.php'; ?>
 
 <main class="main-content">
-    <div class="container">
-        <h1>Gerenciamento de Vagas</h1>
+    <h1>Gerenciamento de Vagas</h1>
         
         <!-- Formulário de Cadastro de Vaga -->
         <!-- Campos: número da vaga, tipo (coberta/descoberta), status (disponível/ocupada), morador responsável -->
         
         <!-- Tabela de Vagas -->
         <!-- Colunas: Número, Tipo, Status, Morador, Ações (Editar/Excluir) -->
-        
-    </div>
 </main>
 
 <?php include '../includes/footer.php'; ?>

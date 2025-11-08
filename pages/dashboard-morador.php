@@ -39,10 +39,8 @@ try {
 <?php include '../includes/header.php'; ?>
 
 <main class="main-content">
-    <div class="container">
-        <h1>Dashboard - Morador</h1>
-        
-        <!-- Informações do Morador -->
+    <h1>Dashboard - Morador</h1>
+    <!-- Informações do Morador -->
         <!-- Exibir: nome, apartamento, bloco -->
         
         <!-- Area de Comunicados -->
@@ -56,8 +54,6 @@ try {
         
         <!-- Visitantes Recentes -->
         <!-- Listar últimos visitantes autorizados -->
-
-    </div>
 </main>
 
 <?php include '../includes/footer.php'; ?>

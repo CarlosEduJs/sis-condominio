@@ -67,8 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['alterar_senha'])) {
 <?php include '../includes/header.php'; ?>
 
 <main class="main-content">
-    <div class="container">
-        <h1>Meu Perfil</h1>
+    <h1>Meu Perfil</h1>
         
         <!-- Informações do Usuário -->
         <!-- Exibir: nome, cpf, email, telefone, apartamento (se morador) -->
@@ -78,8 +77,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['alterar_senha'])) {
         
         <!-- Formulário de Atualização de Dados -->
         <!-- Campos editáveis: email, telefone -->
-        
-    </div>
 </main>
 
 <?php include '../includes/footer.php'; ?>

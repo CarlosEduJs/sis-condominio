@@ -45,8 +45,7 @@ try {
 <?php include '../includes/header.php'; ?>
 
 <main class="main-content">
-    <div class="container">
-        <h1>Comunicados</h1>
+   <h1>Comunicados</h1>
         
         <?php if($_SESSION['role'] === 'admin'): ?>
         <!-- Formulário de Novo Comunicado (apenas para admin) -->
@@ -56,7 +55,6 @@ try {
         <!-- Lista de Comunicados -->
         <!-- Exibir: título, data, mensagem completa ou resumida -->
         
-    </div>
 </main>
 
 <?php include '../includes/footer.php'; ?>

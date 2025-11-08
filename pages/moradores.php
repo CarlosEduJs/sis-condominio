@@ -71,8 +71,7 @@ try {
 <?php include '../includes/header.php'; ?>
 
 <main class="main-content">
-    <div class="container">
-        <h1>Gerenciamento de Moradores</h1>
+    <h1>Gerenciamento de Moradores</h1>
         
         <!-- Formulário de Cadastro de Morador -->
         <!-- Campos: nome, cpf, email, telefone, apartamento, bloco, senha -->
@@ -80,7 +79,6 @@ try {
         <!-- Tabela de Moradores -->
         <!-- Colunas: Nome, CPF, Apartamento, Bloco, Telefone, Ações (Editar/Excluir) -->
         
-    </div>
 </main>
 
 <?php include '../includes/footer.php'; ?>

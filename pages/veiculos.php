@@ -66,8 +66,7 @@ try {
 <?php include '../includes/header.php'; ?>
 
 <main class="main-content">
-    <div class="container">
-        <h1>Gerenciamento de Veículos</h1>
+    <h1>Gerenciamento de Veículos</h1>
         
         <!-- Formulário de Cadastro de Veículo -->
         <!-- Campos: placa, modelo, cor, morador proprietário, vaga associada -->
@@ -75,7 +74,6 @@ try {
         <!-- Tabela de Veículos -->
         <!-- Colunas: Placa, Modelo, Cor, Proprietário, Vaga, Ações (Editar/Excluir) -->
         
-    </div>
 </main>
 
 <?php include '../includes/footer.php'; ?>

@@ -66,8 +66,7 @@ try {
 <?php include '../includes/header.php'; ?>
 
 <main class="main-content">
-    <div class="container">
-        <h1>Registro de Visitantes</h1>
+    <h1>Registro de Visitantes</h1>
         
         <!-- Formulário de Registro de Visitante -->
         <!-- Campos: nome do visitante, cpf, apartamento visitado, data/hora entrada, data/hora saída -->
@@ -76,7 +75,6 @@ try {
         <!-- Colunas: Nome, CPF, Apartamento, Data/Hora Entrada, Data/Hora Saída, Status -->
         <!-- Filtros: por data, por apartamento -->
         
-    </div>
 </main>
 
 <?php include '../includes/footer.php'; ?>
