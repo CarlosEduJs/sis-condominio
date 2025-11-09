@@ -5,6 +5,12 @@ requireAdmin();
 
 // Busca estatísticas
 try {
+    // pegar o administrador logado
+    $stmt = $pdo->prepare("SELECT nome FROM usuarios WHERE id = :id");
+    $stmt->bindParam(':id', $_SESSION['user_id'], PDO::PARAM_INT);
+    $stmt->execute();
+    $admin = $stmt->fetch(PDO::FETCH_ASSOC);
+
     // Total de moradores
     $stmt = $pdo->query("SELECT COUNT(*) as total FROM usuarios WHERE role = 'morador'");
     $total_moradores = $stmt->fetch(PDO::FETCH_ASSOC)['total'];
@@ -68,7 +74,7 @@ try {
 <?php include '../includes/header.php'; ?>
 
 <main class="main-content">
-    <h1>Dashboard - Administrador</h1>
+    <h1>Olá, <?php echo htmlspecialchars($admin['nome']); ?>!</h1>
 
     <div class="dashboard-cards">
         <div class="dashboard-card">

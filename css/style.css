@@ -62,7 +62,7 @@ body {
 .link {
   text-decoration: none;
   color: var(--font-color);
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s ease;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
@@ -71,6 +71,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 2px;
+  font-size: 14px;
 }
 
 .link span.material-symbols-outlined {
@@ -318,6 +319,10 @@ table {
   .main-footer,
   .main-content {
     padding: 15px 20px;
+  }
+
+  .link {
+    font-size: 16px;
   }
 
   .main-header {
