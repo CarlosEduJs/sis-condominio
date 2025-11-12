@@ -40,20 +40,7 @@ try {
 
 <main class="main-content">
     <h1>Dashboard - Morador</h1>
-    <!-- Informações do Morador -->
-        <!-- Exibir: nome, apartamento, bloco -->
-        
-        <!-- Area de Comunicados -->
-        <!-- Listar comunicados recentes do condomínio -->
-        
-        <!-- Meus Veículos -->
-        <!-- Listar veículos cadastrados pelo morador -->
-        
-        <!-- Minhas Vagas -->
-        <!-- Exibir vagas associadas ao morador -->
-        
-        <!-- Visitantes Recentes -->
-        <!-- Listar últimos visitantes autorizados -->
+    
 </main>
 
 <?php include '../includes/footer.php'; ?>
